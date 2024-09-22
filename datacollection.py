@@ -10,6 +10,7 @@ save_dir = 'cropped_img'
 if not os.path.exists(save_dir):
     os.makedirs(save_dir)
 
+
 def save_cropped_img(img, pos, index):
     cropped_img = img[pos[1]:pos[1]+height, pos[0]:pos[0]+width]
     save_path = os.path.join(save_dir, f'roi_{index}.png')
